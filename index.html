@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Bán Hàng — Chính sách quyền riêng tư & Hướng dẫn</title>
+<style>
+  :root{
+    --green:#16A34A; --green-d:#15803D; --ink:#14261B; --muted:#5B6B60;
+    --line:#E3EAE4; --bg:#F6F9F5; --card:#FFFFFF; --amber:#B45309;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:820px; margin:0 auto; padding:0 20px 80px}
+  header{
+    background:linear-gradient(135deg,var(--green),var(--green-d));
+    color:#fff; padding:44px 20px 40px; text-align:center;
+  }
+  .logo{
+    width:66px;height:66px;border-radius:18px;background:rgba(255,255,255,.16);
+    display:inline-flex;align-items:center;justify-content:center;font-size:34px;
+    margin-bottom:14px;border:1px solid rgba(255,255,255,.28)
+  }
+  header h1{margin:0;font-size:26px;font-weight:800;letter-spacing:-.01em}
+  header p{margin:8px 0 0;opacity:.92;font-size:15px}
+  .updated{margin-top:14px;font-size:13px;opacity:.85}
+  nav{
+    position:sticky;top:0;z-index:5;background:rgba(246,249,245,.92);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+    display:flex;gap:6px;justify-content:center;flex-wrap:wrap;padding:10px
+  }
+  nav a{
+    text-decoration:none;color:var(--green-d);font-weight:600;font-size:14px;
+    padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:#fff
+  }
+  nav a:hover{background:var(--green);color:#fff;border-color:var(--green)}
+  section{margin-top:34px}
+  h2{
+    font-size:20px;font-weight:800;margin:0 0 4px;
+    display:flex;align-items:center;gap:10px
+  }
+  h2 .n{
+    width:28px;height:28px;border-radius:8px;background:var(--green);color:#fff;
+    font-size:15px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto
+  }
+  h3{font-size:16px;margin:22px 0 6px;color:var(--green-d)}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:20px 22px;margin-top:12px
+  }
+  p{margin:10px 0}
+  ul{margin:8px 0;padding-left:22px}
+  li{margin:6px 0}
+  .muted{color:var(--muted)}
+  .pill{display:inline-block;background:#EAF6EE;color:var(--green-d);
+    padding:2px 10px;border-radius:999px;font-size:13px;font-weight:600;margin:2px 4px 2px 0}
+  table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14.5px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#EFF5F0;color:var(--green-d);font-weight:700}
+  .callout{
+    background:#FFF7ED;border:1px solid #FCD9A8;border-radius:14px;padding:16px 18px;
+    margin-top:14px;color:#7C4A08
+  }
+  .steps{counter-reset:s;list-style:none;padding:0;margin:12px 0}
+  .steps li{
+    position:relative;padding:14px 16px 14px 56px;background:#fff;border:1px solid var(--line);
+    border-radius:14px;margin:10px 0
+  }
+  .steps li::before{
+    counter-increment:s;content:counter(s);position:absolute;left:14px;top:14px;
+    width:28px;height:28px;border-radius:8px;background:var(--green);color:#fff;
+    font-weight:700;display:flex;align-items:center;justify-content:center
+  }
+  .steps b{display:block;margin-bottom:2px}
+  .contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  .contact a{
+    text-decoration:none;background:var(--green);color:#fff;padding:11px 18px;border-radius:12px;
+    font-weight:700;font-size:15px
+  }
+  .contact a.alt{background:#fff;color:var(--green-d);border:1px solid var(--green)}
+  footer{margin-top:50px;text-align:center;color:var(--muted);font-size:13px}
+  @media(max-width:560px){header h1{font-size:22px}.card{padding:16px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🛍️</div>
+  <h1>AI Bán Hàng</h1>
+  <p>Ứng dụng bán hàng cho cửa hàng nhỏ · com.dunghb.aibanhang</p>
+  <div class="updated">Cập nhật lần cuối: 19/08/2026 · Nhà phát triển: Nguyễn Minh Dũng</div>
+</header>
+
+<nav>
+  <a href="#privacy">Chính sách quyền riêng tư</a>
+  <a href="#delete">Xóa tài khoản &amp; dữ liệu</a>
+  <a href="#guide">Hướng dẫn sử dụng</a>
+  <a href="#contact">Liên hệ</a>
+</nav>
+
+<div class="wrap">
+
+  <!-- ============ PRIVACY ============ -->
+  <section id="privacy">
+    <h2><span class="n">1</span> Chính sách quyền riêng tư</h2>
+    <div class="card">
+      <p>“AI Bán Hàng” giúp chủ cửa hàng nhỏ quản lý bán hàng, kho, đơn hàng và báo cáo doanh thu. Chúng tôi chỉ thu thập dữ liệu cần thiết để ứng dụng hoạt động, và <b>không bán, không chia sẻ dữ liệu cho bên thứ ba vì mục đích quảng cáo</b>.</p>
+
+      <h3>Dữ liệu chúng tôi thu thập</h3>
+      <table>
+        <tr><th>Loại dữ liệu</th><th>Vì sao cần</th></tr>
+        <tr><td>Số điện thoại</td><td>Làm tên đăng nhập và định danh tài khoản của bạn.</td></tr>
+        <tr><td>Mã nhận dạng thiết bị (Android ID, tên máy)</td><td>Bảo mật: mỗi tài khoản đăng nhập trên một thiết bị tại một thời điểm, chống dùng chung trái phép.</td></tr>
+        <tr><td>Dữ liệu bán hàng (sản phẩm, đơn hàng, tên và địa chỉ khách do bạn nhập)</td><td>Lưu và đồng bộ để nhiều máy trong cùng cửa hàng dùng chung.</td></tr>
+      </table>
+
+      <h3>Cách dữ liệu được bảo vệ</h3>
+      <ul>
+        <li>Toàn bộ dữ liệu được <b>mã hóa khi truyền</b> qua kết nối an toàn (HTTPS/TLS).</li>
+        <li>Dữ liệu lưu trên máy chủ đám mây riêng của ứng dụng, chỉ phục vụ vận hành cửa hàng của bạn.</li>
+        <li>Chúng tôi <b>không</b> chia sẻ dữ liệu với bên thứ ba cho mục đích tiếp thị.</li>
+      </ul>
+
+      <h3>Quyền của ứng dụng</h3>
+      <p class="muted">
+        <span class="pill">Internet</span> đồng bộ dữ liệu ·
+        <span class="pill">Bluetooth</span> kết nối máy in nhiệt ·
+        <span class="pill">Vị trí</span> Android yêu cầu để quét thiết bị Bluetooth (không dùng để theo dõi vị trí) ·
+        <span class="pill">Máy ảnh</span> chụp ảnh sản phẩm (tùy chọn).
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ DELETE ============ -->
+  <section id="delete">
+    <h2><span class="n">2</span> Xóa tài khoản &amp; dữ liệu</h2>
+    <div class="card">
+      <p>Bạn có toàn quyền yêu cầu xóa tài khoản và dữ liệu liên quan bất cứ lúc nào.</p>
+      <h3>Cách yêu cầu xóa</h3>
+      <ul>
+        <li>Nhắn tin qua <b>Zalo: 0354335723</b>, ghi rõ số điện thoại tài khoản cần xóa; hoặc</li>
+        <li>Gửi email tới địa chỉ ở phần Liên hệ bên dưới.</li>
+      </ul>
+      <h3>Dữ liệu sẽ được xóa</h3>
+      <ul>
+        <li>Số điện thoại, mã thiết bị gắn với tài khoản.</li>
+        <li>Sản phẩm, kho, đơn hàng và báo cáo thuộc tài khoản/cửa hàng của bạn.</li>
+      </ul>
+      <p class="muted">Yêu cầu được xử lý trong vòng 7 ngày làm việc. Một số bản ghi có thể được giữ lại trong thời gian ngắn nếu pháp luật yêu cầu, sau đó xóa vĩnh viễn.</p>
+    </div>
+  </section>
+
+  <!-- ============ GUIDE ============ -->
+  <section id="guide">
+    <h2><span class="n">3</span> Hướng dẫn sử dụng</h2>
+
+    <div class="card">
+      <h3>Bắt đầu nhanh</h3>
+      <ol class="steps">
+        <li><b>Đăng ký / Đăng nhập</b>Dùng số điện thoại và mật khẩu. Dùng thử miễn phí 15 ngày.</li>
+        <li><b>Chọn kiểu bán</b>“Bán theo sản phẩm” (bán theo món) hoặc “Bán theo kilogram” (bán theo cân).</li>
+        <li><b>Thêm hàng vào kho</b>Vào tab <b>Kho hàng</b> → “Thêm hàng”, nhập tên, giá bán, giá vốn, tồn kho.</li>
+        <li><b>Bán và thanh toán</b>Vào tab <b>Bán hàng</b>, chọn sản phẩm, bấm “Đã thanh toán” hoặc “Lưu đơn” (đơn nợ).</li>
+        <li><b>Xem báo cáo</b>Tab <b>Báo cáo</b> hiển thị doanh thu, tiền lời, sản phẩm bán chạy; xuất Excel/PDF.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h3>Bán theo nhóm nhiều máy</h3>
+      <p>Nhiều điện thoại trong cùng cửa hàng dùng chung kho và đơn hàng theo thời gian thực.</p>
+      <table>
+        <tr><th>Vai trò</th><th>Được làm gì</th></tr>
+        <tr><td><b>Chủ (Cấp 1)</b></td><td>Toàn quyền: sửa kho, xem giá vốn và tiền lời, thêm/xóa nhân viên, xóa đơn.</td></tr>
+        <tr><td><b>Quản lý (Cấp 2)</b></td><td>Sửa kho, bán, xóa đơn — nhưng không xem giá vốn/tiền lời.</td></tr>
+        <tr><td><b>Nhân viên (Cấp 3)</b></td><td>Bán và thu tiền. Không sửa kho, không xem tiền lời, không xóa đơn.</td></tr>
+      </table>
+      <ul>
+        <li><b>Tạo nhóm:</b> Cài đặt → Quản lý nhóm → “Tạo nhóm (làm máy chính)”. Kho hiện có được đưa lên đám mây.</li>
+        <li><b>Thêm máy phụ:</b> Chủ/Quản lý nhập số điện thoại nhân viên (đã đăng ký app) vào nhóm.</li>
+        <li><b>Tạm nghỉ &amp; vào lại:</b> Nhân viên rời nhóm bất kỳ lúc nào; vào lại bằng nút “Vào lại nhóm cũ” nếu chưa bị xóa.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Sản phẩm có biến thể (size, màu)</h3>
+      <ul>
+        <li>Khi thêm sản phẩm, bật <b>“Biến thể (size, màu…)”</b>, lưu sản phẩm rồi mở lại để thêm từng biến thể.</li>
+        <li>Mỗi biến thể có <b>tồn kho riêng</b> và có thể đặt giá bán riêng.</li>
+        <li>Khi bán, chọn đúng biến thể; hệ thống trừ tồn đúng loại.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Kết nối máy in Bluetooth</h3>
+      <ol class="steps">
+        <li><b>Bật Bluetooth</b>Bật Bluetooth trên điện thoại và trên máy in nhiệt.</li>
+        <li><b>Tìm máy in</b>Cài đặt → Máy in → quét thiết bị xung quanh.</li>
+        <li><b>Nhập mã PIN</b>Chọn máy in, nhập mã PIN (đa số dùng <b>0000</b> hoặc <b>1234</b>) để ghép nối.</li>
+        <li><b>Chọn khổ giấy &amp; in thử</b>Chọn 58mm hoặc 80mm, lưu lại và in thử một hóa đơn.</li>
+      </ol>
+      <div class="callout">Mẹo: nếu máy in không ghép được, tắt/bật lại Bluetooth hoặc khởi động lại máy in rồi thử nhập PIN lần nữa.</div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <h2><span class="n">4</span> Liên hệ &amp; hỗ trợ</h2>
+    <div class="card">
+      <p>Cần hỗ trợ, báo lỗi hoặc yêu cầu xóa dữ liệu, liên hệ:</p>
+      <div class="contact">
+        <a href="https://zalo.me/0354335723">Zalo: 0354335723</a>
+        <a class="alt" href="mailto:dungjuki2014@gmail.com">Email hỗ trợ</a>
+      </div>
+      <p class="muted" style="margin-top:14px">Nhà phát triển: Nguyễn Minh Dũng · Ứng dụng: AI Bán Hàng (com.dunghb.aibanhang)</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 AI Bán Hàng · Chính sách này áp dụng cho ứng dụng AI Bán Hàng trên Google Play.
+  </footer>
+</div>
+
+</body>
+</html>
